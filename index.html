@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>San Diego Top Spots</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery for table -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>San Diego Top Spots</h1>
+    <p class="subtitle">
+      They say your 30s are the best years of your life...
+      so here's to the Top 30 of San Diego.
+    </p>
+  </header>
+
+  <div class="layout">
+
+    <!-- map -->
+    <div class="map-container">
+  <div class="map-header">
+   <div class="map-header-left">
+      <span class="arrow">
+     &nbsp;&nbsp;&nbsp; ↓↓↓ &nbsp;</span>
+     CLICK THE SIDEBAR ICON TO VIEW MORE DETAILS
+    </div>
+  </div>
+
+      <!-- embedded google map -->
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps/d/u/3/embed?mid=16TrwDZA_rx44LqDXHcab6SRZWDWz6lk&ehbc=2E312F&noprof=1">
+      </iframe>
+
+    </div>
+
+
+    <!-- table section -->
+    <div class="table-container">
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>What Do You Feel Like Doing?</th>
+              <th>Open Map in a New Tab</th>
+            </tr>
+          </thead>
+
+          <!-- rows added from JS -->
+          <tbody id="topSpotsTable"></tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
